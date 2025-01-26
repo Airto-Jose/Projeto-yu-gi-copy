@@ -5,7 +5,7 @@ let cartaoAtual = 0;
 
 btnAvancar.addEventListener('click', function () {
     if (cartaoAtual === cartoes.length - 1) {
-        cartaoAtual = -1;
+        return;
     }
     esconderCartaoSelecionado();
     cartaoAtual++;
@@ -14,7 +14,7 @@ btnAvancar.addEventListener('click', function () {
 
 btnVoltar.addEventListener('click', function () {
     if (cartaoAtual === 0) {
-        cartaoAtual = cartoes.length;
+        return;
     }
     esconderCartaoSelecionado();
     cartaoAtual--;
